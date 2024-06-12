@@ -1,17 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"> <!-- codificación-->
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Becca siguiendo cursito</title>
-
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#900C3F">
 
-    <style>
-        body{
-        background:#FFC300
+    <style> /*se ve todo muy chiquito*/
+        html{
+            font-size: 120%;
         }
+
+        header{
+            background-color:#858ae3;
+            padding-left:10px;
+            padding-right:10px;
+            padding-bottom:5px;
+            padding-top:5px;
+            text-align: center;
+        }
+
+        h1{
+            font-family:'Times New Roman', Times, serif;
+            inset: 0;
+            text-align: center;
+            font-size: 50px; 
+            text-decoration: underline;
+        }
+
+        body{
+            background:#a23b72;
+            font-family:monospace;
+        }
+
+        .titulos{
+            text-align: center;
+            color:#858ae3;
+            text-decoration: underline;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .formularioContainer{
+            border:inherit;
+            text-align: center;
+            position: relative;
+            inset: 0;
+        }   
+        
+        .link:hover{
+            color: #fff;
+        }
+
+        .link{
+            color:purple;
+        }
+
+        .outline {
+            outline-color: #2a2b2a;
+            outline-width:3px;
+            outline-style:dashed;
+        }
+
+        .info{
+            display:flex;
+            flex-flow: row nowrap;
+            margin: 20px;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width:100%;
+        }
+
+        fieldset{
+            border-color:#2a2b2a;
+            border-style: solid; 
+            position:relative;
+            inset: 0;
+        }
+
+        .boton{
+            margin:5px;
+        }
+
+        footer{
+            text-align: center;
+            background-color:#858ae3;
+            margin: 10px;
+            padding: 10px;
+        }
+
     </style>
 </head>
     <body>
@@ -25,19 +104,19 @@
             
             <p>
                 <nav>
-                    <a href="Proyectos">Proyectos</a>
-                    <a href="Lenguajes">Lenguajes</a>
-                    <a href="Contacto">Contacto</a>
-                    <a href="https://www.frd.utn.edu.ar/" target="_blanck"
+                    <a class="link" href="Proyectos">Proyectos</a>
+                    <a class="link" href="Lenguajes">Lenguajes</a>
+                    <a class="link" href="Contacto">Contacto</a>
+                    <a class="link" href="https://www.frd.utn.edu.ar/" target="_blanck"
                     rel="noreferrer">Facultad</a>
                 </nav>
             </p>
         </header>
 
 <main>
-    <section>
+    <section class="info outline">
         <article></article>
-            <h2 id="Proyectos"> Proyectos</h2>
+            <h2 id="Proyectos" class="titulos"> Proyectos</h2>
             <ul>
                 <li class="list-item">Redes Neuronales para la identificación y clasificación de imagenes-Python </li>
                 <li class="list-item">Pasantía Municipal-HTML-CSS-JavaScrypt</li>
@@ -46,8 +125,8 @@
         </article>
     </section>
 
-    <section>
-        <H3 id="Lenguajes">Lenguajes</H3>
+    <section class="info outline">
+        <H3 id="Lenguajes" class="titulos">Lenguajes</H3>
         <ol>
             <li>Pascal</li>
             <li>Wollok/Game</li>
@@ -56,15 +135,16 @@
         </ol>
     </section>
 
-    <section>
-        <h3>Reconocimientos</h3>
+    <div style="display:flex;">
+    <section class="info outline">
+        <h3 class="titulos">Reconocimientos</h3>
         <ul>
             <li>Promedio final secundario: 9,55</li>
             <li>Beca al Merito Techint: 2016 y 2018</li>
         </ul>
     </section>
 
-    <section>
+    <section class="info outline">
         <details>
             <summary>Hobbies</summary>
             <ul>
@@ -75,32 +155,38 @@
             </ul>
         </details>
     </section>
+</div>
 
-    <section>
-        <h2 id="Contacto">Formulario de Contacto</h2>
+    <section class="outline">
+        <div class="formularioContainer">
+            <h2 id="Contacto" class="titulos">Formulario de Contacto</h2>
 
-        <form method="post" action="/">
-            <fieldset>
-                <legend>Información personal</legend>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Información personal</legend>
 
-                <label>Nombre:
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Miguelito"
-                    required>    
-                </label>
+                    <label>Nombre:
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Miguelito"
+                            required>    
+                    </label>
 
-                <label>Email:
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Miguelito@mail.com"
-                        required>
-                </label>
-            </fieldset>   
-        <input type="submit" value="Enviar contacto">
-        </form>
+                    <label>Email:
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Miguelito@mail.com"
+                            required
+                        >
+                    </label>
+                    </fieldset>   
+                <input class="boton"
+                type="submit" value="Enviar contacto"
+                >
+            </form>
+        </div>
     </section>
 </main>
 
@@ -109,7 +195,7 @@
     <section>
         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" 
         target="_blanck" rel="noreferrer">
-            <button>
+            <button class="boton">
                 Click? Click
             </button>
         </a>
