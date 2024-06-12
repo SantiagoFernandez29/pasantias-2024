@@ -7,7 +7,8 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#900C3F">
 
-    <style> /*se ve todo muy chiquito*/
+    <style>
+        
         html{
             font-size: 120%;
         }
@@ -47,7 +48,7 @@
             position: relative;
             inset: 0;
         }   
-        
+
         .link:hover{
             color: #fff;
         }
@@ -56,11 +57,13 @@
             color:purple;
         }
 
+        
         .outline {
             outline-color: #2a2b2a;
             outline-width:3px;
             outline-style:dashed;
         }
+
 
         .info{
             display:flex;
@@ -135,27 +138,27 @@
         </ol>
     </section>
 
-    <div style="display:flex;">
-    <section class="info outline">
-        <h3 class="titulos">Reconocimientos</h3>
-        <ul>
-            <li>Promedio final secundario: 9,55</li>
-            <li>Beca al Merito Techint: 2016 y 2018</li>
-        </ul>
-    </section>
-
-    <section class="info outline">
-        <details>
-            <summary>Hobbies</summary>
+    <div style="display:flex;"> <!--si hago una clase para poder acomodar el estilo, el efecto se pierde-->
+        <section class="info outline">
+            <h3 class="titulos">Reconocimientos</h3>
             <ul>
-                <li>Leer</li>
-                <li>Videojuegos</li>
-                <li>Música</li>
-                <li>Manualidades</li>
+                <li>Promedio final secundario: 9,55</li>
+                <li>Beca al Merito Techint: 2016 y 2018</li>
             </ul>
-        </details>
-    </section>
-</div>
+        </section>
+
+        <section class="info outline">
+            <details>
+                <summary>Hobbies</summary>
+                <ul>
+                    <li>Leer</li>
+                    <li>Videojuegos</li>
+                    <li>Música</li>
+                    <li>Manualidades</li>
+                </ul>
+            </details>
+        </section>
+    </div>
 
     <section class="outline">
         <div class="formularioContainer">
