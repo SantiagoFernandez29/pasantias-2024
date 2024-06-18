@@ -1,0 +1,135 @@
+*{
+    /* box-sizing: border-box; */
+    margin:0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family:'Roboto',sans-serif;
+    background:
+    radial-gradient(
+      circle at 100% 0,
+      rgba(0, 247, 255, 0.486),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(0, 0, 255, 0.5),
+      rgba(0, 0, 255, 0) 70.71%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgba(0, 204, 255, 0.5),
+        rgba(0, 255, 0, 0) 70.71%
+      )
+      beige;
+}
+
+.logContainer{
+    margin:auto;
+    border: 1.5px solid aliceblue;
+    border-radius: 20px;
+    width: 380px;
+    background-color: transparent;
+    backdrop-filter: blur(200px);
+    box-shadow: 0 0 10px rgb(0,0,0,-2);
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:80px;
+    padding-bottom: 40px;
+}
+
+.inputsContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+
+.nameInputContainer{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 90px;
+    padding-inline: 90px;
+}
+
+.passInputContainer{
+    display:flex;
+    flex-direction: column;
+    padding-inline: 90px;
+    padding-block: 10px;
+}
+
+.accessContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:40px;
+    padding-bottom:70px;
+}
+
+#title{
+    font-size: 2.5em;
+    color: aliceblue;
+}
+
+
+
+label{
+    font-size: 0.7em;
+    padding-block: 2px;
+}
+
+.nameInputContainer input{
+    background-color: transparent;
+    border-radius: 10px;
+    padding-inline: 28px;
+    padding-block: 5px;
+    border-color: aliceblue;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.passInputContainer input{
+    background-color: transparent;
+    border-radius: 10px;
+    padding-inline: 28px;
+    padding-block: 5px;
+    border-color: aliceblue;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.accessContainer button{
+    background-color: aliceblue;
+    color: rgb(100, 175, 240);
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-inline: 80px;
+    padding-block: 5px;
+    border-radius:10px;
+    border-style: none;
+}
+
+.accessContainer a{
+    color:aliceblue;
+    padding: 12px;
+    font-size: 0.7em;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: rgb(100, 175, 240);
+    color:aliceblue;
+    box-shadow: 0 0 10px rgb(0,0,0,0.2);
+}
+a:hover{
+    text-decoration:underline;
+}
