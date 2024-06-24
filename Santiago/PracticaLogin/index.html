@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WebExample</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='script.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src='main.js'></script>
 </head>
 <body>
 
-    <div class="logContainer">
-        
-        <div class="titleContainer">
-            <h1 id="title">LOGIN</h1>
+    <div class="fullContainer">
+
+        <div class="formContainer">
+            <form action="">
+
+                <div class="titleContainer">
+                    <h1>LOGIN</h1>
+                </div>
+
+                <div class="inputsContainer">
+                    <div class="username">
+                        <label for="name">USERNAME</label>
+                        <input type="text" name="username" id="name" value="Nombre">
+                    </div>
+                    <div class="password">
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" name="password" id="pass" value="Contraseña">
+                        <i class='bx bx-show-alt' id="eye"></i>
+                    </div>
+                </div>
+
+                <div class="bottomContainer">
+                    <button id="btn">SIGN UP</button>
+                    <a href="">Don't have an account?</a>
+                    <p id="frase"></p>
+                </div>
+
+            </form>
         </div>
 
-        <div class="inputsContainer">
-            <div class="nameInputContainer">   
-                <label id="nameLabel" for="name">USER NAME</label>
-                <input type="text" id="name" />
-            </div> 
-
-            <div class="passInputContainer">
-                <label id="passLabel" for="pass">PASSWORD</label>
-                <input type="text" id="pass">
-            </div>
+        <div class="phoneContainer">
+            <img src="lock.V3.png" alt="lock">
         </div>
 
-        <div class="accessContainer">
-            <button name="signUn" type="button">SIGN UP</button>
-            <a href="" id="register">Don't have an account?</a>
-        </div>
     </div>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>

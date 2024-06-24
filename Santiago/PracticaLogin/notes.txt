@@ -1,0 +1,20 @@
+    ---<-styles.css notes->---
+
+A todos los elementos del DOM les aplico:
+* padding: 0px los elementos van a tener un espaciado interno de 0px.
+* margin: 0px los elementos van a tener un espaciado externo de 0px.
+* box-sizing: border-box los elementos se van a ajustar siempre al ancho que se le defina.
+
+Al body le aplico:
+* min-height: 100vh para que la altura mínima de todo lo contenido en el body sea el 100% de la 
+ pantalla. Van a quedar centrados en altura.
+* distribución flex.
+* fuente para todo el contenido.
+
+Al phoneContainer le aplico:
+* position: relative para que pueda modificar la posición de dicho contenedor sin alterar la
+ de los otros elementos.
+
+Al ícono le aplico:
+* transform: translate() para acomodarlo adecuadamente. ¿Es correcto o debería alinearlo con 
+ el input?
