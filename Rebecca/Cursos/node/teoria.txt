@@ -12,3 +12,25 @@ ejecuta tareas mientras espera que se realicen otras que quedaron pendientes
 secreto: utiliza V8, el motor de chrome para javascript
 mismo motor, diferente entorno
 
+el objeto global de windows no existe
+en nodejs la variable global es globalThis (siempre voy a tener acceso)
+
+patron de diseño MODULO
+-> cada archivo es un modulo
+-> cada modulo tiene su propio scope
+-> se puede importar y exportar
+
+como importar y exportar:
+-> exportar: module.exports = {}
+-> importar: 
+
+
+.js-> commonJS
+.mjs -> para utilizar modulos
+.cjs -> para utilizar commonJS
+ 
+
+ import{asdf} from './asdf.mjs'
+
+
+
