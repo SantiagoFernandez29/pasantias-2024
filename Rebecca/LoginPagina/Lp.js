@@ -18,10 +18,10 @@ function toggleInputType(params) {
 
 
   const showIcon = document
-    .querySelector(".showIcon")
+    .querySelector(".show-icon")
     .classList.toggle("hidden");
   const hideIcon = document
-    .querySelector(".hideIcon")
+    .querySelector(".hide-icon")
     .classList.toggle("show");
 }
 });
