@@ -4,6 +4,7 @@ A todos los elementos del DOM les aplico:
 * padding: 0px los elementos van a tener un espaciado interno de 0px.
 * margin: 0px los elementos van a tener un espaciado externo de 0px.
 * box-sizing: border-box los elementos se van a ajustar siempre al ancho que se le defina.
+* outline: none para quitar el borde interno del input cuando está seleccionado.
 
 Al body le aplico:
 * min-height: 100vh para que la altura mínima de todo lo contenido en el body sea el 100% de la 
@@ -16,5 +17,12 @@ Al phoneContainer le aplico:
  de los otros elementos.
 
 Al ícono le aplico:
+* cursor: pointer para que el cursor cambie de estado a clickeable cuando paso por encima del elemento.
 * transform: translate() para acomodarlo adecuadamente. ¿Es correcto o debería alinearlo con 
  el input?
+
+Al párrafo:
+* se le pordría aplicar un position:relative en vez de un position:absolute.
+
+@media:
+* display:none para desaparecer el div del phoneContainer.
