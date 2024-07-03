@@ -1,0 +1,18 @@
+.form{
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 2px solid rgb(50, 255, 211);
+
+}
+
+.inputsContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputName,.inputPassword{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

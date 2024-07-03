@@ -1,6 +1,8 @@
+import './Form.css'
+
 export function Form(){
     return(
-        <form action="">
+        <form className="form" action="">
             <div className="title">
                 <h1>Ejemplo de Fetch</h1>
             </div>
